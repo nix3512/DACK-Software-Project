@@ -81,7 +81,6 @@ df <- lapply(df, gsub, pattern=' ', replacement='')
 View(df)
 newdf <- data.frame(df, stringsAsFactors = FALSE)
 is.na(newdf) <- newdf==""
-newdf
 newdf1 <- na.omit(newdf)
 str(newdf1)
 newdf1$GPA <- as.numeric(as.character(newdf1$GPA))
